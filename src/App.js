@@ -7,7 +7,7 @@ function App() {
     const random = Math.floor(Math.random() * 200);
     const req = await (await fetch(`https://api.adviceslip.com/advice/${random}`)).json();
     //console.log(req);
-    console.log(Math.random(), Math.floor(Math.random() * 200));
+    //console.log(Math.random(), Math.floor(Math.random() * 200));
     setAdvice(req.slip.advice);
   }
 
